@@ -89,11 +89,9 @@ public class IrcOptions extends Activity {
 		btn4.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(IrcOptions.this, IrcClient.class);
-                startActivity(intent);			
-            }
+                startActivity(intent);		
+      }
 		});
-
-
 	}
 
 

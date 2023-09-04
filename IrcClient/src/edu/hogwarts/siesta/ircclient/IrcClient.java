@@ -35,7 +35,7 @@ public class IrcClient extends Activity {
 
 	String tgt=chn;
 
-	final String PFX = "/"; 
+	final String PFX = "."; 
 
 
 
