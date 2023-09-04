@@ -103,11 +103,13 @@ class Irc implements Runnable {
 							ircWrite("NICK "+String.format("unnamed-%04x", random.nextInt(65536)));
 							ircWrite("PRIVMSG nickserv@services.dal.net :RELEASE "+IrcClient.nck+" "+IrcClient.pss);
 							ircWrite("NICK "+IrcClient.nck);		
+/*
 						} else if(ins.equals("433")) {
 							Random random=new Random();
 							ircWrite("NICK "+String.format("unnamed-%04x", random.nextInt(65536)));
 							ircWrite("PRIVMSG nickserv@services.dal.net :GHOST "+IrcClient.nck+" "+IrcClient.pss);
 							ircWrite("NICK "+IrcClient.nck);
+*/							
 						} else if(ins.equals("332")) {
 							tmp=line;
 							usr=cut(tmp,"!");

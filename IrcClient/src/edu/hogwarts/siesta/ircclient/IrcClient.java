@@ -30,7 +30,7 @@ public class IrcClient extends Activity {
 	static String srv = "sakura.jp.as.dal.net";
 	static String nck = "siesta";
 	static String chn = "#pantasya";
-	static String pss = NULL;
+	static String pss = null;
 	static int prt = 6667;
 
 	String tgt=chn;
