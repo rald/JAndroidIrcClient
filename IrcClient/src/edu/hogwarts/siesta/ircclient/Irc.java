@@ -109,7 +109,8 @@ class Irc implements Runnable {
 							ircWrite("NICK "+String.format("unnamed-%04x", random.nextInt(65536)));
 							ircWrite("PRIVMSG nickserv@services.dal.net :GHOST "+IrcClient.nck+" "+IrcClient.pss);
 							ircWrite("NICK "+IrcClient.nck);
-*/							
+
+							
 						} else if(ins.equals("332")) {
 							tmp=line;
 							usr=cut(tmp,"!");
@@ -125,7 +126,10 @@ class Irc implements Runnable {
 						} else {
 							ircClient.display("--> "+line);
 						}
+*/
+
 					}
+
 				
 					if(line.toUpperCase().startsWith("PING")) {
 						ircWrite("PONG "+line.substring(5));
